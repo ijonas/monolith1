@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+monolith1/assets
+.DS_Store
+monolith1/monolith1
+
 # compiled output
 /dist
 /tmp
