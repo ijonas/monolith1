@@ -1,0 +1,9 @@
+#! /bin/sh
+ember build --environment production
+cd monolith1
+rm -rf assets/*
+go clean
+go build
+cp -R ../dist/* assets/
+rice append --exec monolith1
+cd ..
