@@ -1,8 +1,14 @@
 /* global require, module */
 
+var neat = require('node-neat');
+
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+	sassOptions: {
+		includePaths: neat.includePaths
+	}
+});
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
