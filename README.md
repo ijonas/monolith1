@@ -1,6 +1,6 @@
 # Monolith1
 
-This README outlines the details of collaborating on this Ember application.
+This README outlines the details of collaborating on this Ember & Go application.
 
 A short introduction of this app could easily go here.
 
@@ -10,6 +10,7 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
+* [Go](http://golang.org)
 
 ## Installation
 
@@ -17,35 +18,25 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* go get
 
 ## Running / Development
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+From the <project root folder>/monolith run
 
-### Code Generators
+    go run main.go
 
-Make use of the many generators for code, try `ember help generate` for more details
+and point your browser at [http://localhost:8080](http://localhost:8080)
 
 ### Running Tests
 
 * `ember test`
 * `ember test --server`
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
 ### Deploying
 
-Specify what it takes to deploy your app.
+From the project root run the following command
 
-## Further Reading / Useful Links
+    bin/release
 
-* ember: http://emberjs.com/
-* ember-cli: http://www.ember-cli.com/
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+This will create a single binary in monolith1/ called 'monolith1'. Run the binary and point your browser at [http://localhost:8080](http://localhost:8080)
