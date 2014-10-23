@@ -18,11 +18,14 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
-* go get
+* `go get github.com/GeertJohan/go.rice`
+* `go get github.com/GeertJohan/go.rice/rice`
+* `go get`
+
 
 ## Running / Development
 
-From the <project root folder>/monolith run
+From the `<project root folder>/monolith` run
 
     go run main.go
 
@@ -39,4 +42,6 @@ From the project root run the following command
 
     bin/release
 
-This will create a single binary in monolith1/ called 'monolith1'. Run the binary and point your browser at [http://localhost:8080](http://localhost:8080)
+This will create a single binary in `<project root folder>/monolith1` called `monolith1`. Run the binary and point your browser at [http://localhost:8080](http://localhost:8080)
+
+    monolith1/monolith1
